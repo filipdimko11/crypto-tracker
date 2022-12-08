@@ -53,17 +53,6 @@ const Coin = (props) => {
         </div>
         <Link
           to={`/coin-details:${coin.id}`}
-          target="_blank"
-          className="hidden right-2 bottom-2 text-xs 
-          cursor-pointer underline"
-          element={<CoinDetails />}
-          key={coin.id}
-        >
-          Learn more about {coin.name}
-        </Link>
-        <Link
-          to={`/coin-details:${coin.id}`}
-          target="_blank"
           className="md:right-2 top-1 right-1 absolute md:top-2 text-xs underline"
           element={<CoinDetails />}
           key={coin.id}
