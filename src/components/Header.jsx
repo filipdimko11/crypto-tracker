@@ -28,7 +28,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="font-bold text-center md:text-2xl md:pt-4">
+    <div className="font-bold text-4xl pt-2 text-center md:text-2xl md:pt-4">
       <div className="flex justify-center items-center">
         <FaCoins className="mr-2 text-[#6900ff]" />
         Coin Tracker&nbsp;<p className="text-[#6900ff]"> Live</p>

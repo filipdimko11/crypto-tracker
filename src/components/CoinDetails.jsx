@@ -28,10 +28,13 @@ const CoinDetails = () => {
   }, []);
 
   return (
-    <div className="md:h-fit lg:h-screen bg-[#1a1b1] mx-[40vh] text-center text-4xl font-bold py-4">
-      <div className="bg-secondary rounded-lg mt-10 py-6 shadow-xl">
-        {coin.name}
-      </div>
+    <div
+      className="lg:h-full 
+      2xl:h-screen md:h-screen bg-[#1a1b1] lg:mx-[40vh]
+      mx-[2vh]
+    text-center text-4xl font-bold py-4 "
+    >
+      <div className="bg-secondary rounded-lg py-6 shadow-xl">{coin.name}</div>
       <div className="bg-[#272f36] relative rounded-lg my-4 py-4">
         <div className="text-sm absolute w-fill left-6">
           Market cap rank: #{coin?.market_cap_rank}
