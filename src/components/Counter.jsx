@@ -3,7 +3,7 @@ import { fetchData } from "../endpoints/FetchData";
 
 const Counter = (props) => {
   // create a counter
-  const [counter, setCounter] = useState(90);
+  const [counter, setCounter] = useState(300);
   // create a function to increment the counter
   const increment = () => {
     setCounter(counter - 1);
@@ -15,12 +15,12 @@ const Counter = (props) => {
     }, 1000);
     if (counter < 0) {
       props.fetchData();
-      setCounter(90);
+      setCounter(300);
     }
   });
 
   return (
-    <div className="text-xs text-left pl-4">
+    <div className="text-xs text-left my-4 pl-5">
       {/* implement the counter */}
       <h1>Refreshing in: {counter} seconds</h1>
     </div>
